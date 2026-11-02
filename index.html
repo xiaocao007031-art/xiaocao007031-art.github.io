@@ -104,6 +104,66 @@
       color: #85857c;
       font-size: 12px;
     }
+        .gallery-intro {
+      color: #72736b;
+      font-size: 14px;
+      margin: -12px 0 30px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .news-item {
+      margin: 0;
+      background: #fbfaf7;
+      border: 1px solid #dedbd2;
+      overflow: hidden;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .news-item:hover {
+      transform: translateY(-4px);
+      border-color: #9a563e;
+    }
+
+    .news-item img {
+      display: block;
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: top;
+      background: #eee9e0;
+      cursor: zoom-in;
+    }
+
+    .news-item figcaption {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 15px;
+      font-size: 13px;
+      color: #4c4c43;
+    }
+
+    .news-item figcaption span {
+      color: #9a563e;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 650px) {
+      .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .news-item img {
+        height: 230px;
+      }
+    }
     @media (max-width: 650px) {
       .nav { align-items: flex-start; gap: 15px; }
       .nav-links { gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
@@ -119,10 +179,11 @@
   <nav class="nav">
     <a class="logo" href="#">FIELDNOTES.</a>
     <div class="nav-links">
-      <a href="#work">作品</a>
-      <a href="#research">研究</a>
-      <a href="#about">关于</a>
-    </div>
+  <a href="#work">精选作品</a>
+  <a href="#news-gallery">新闻档案</a>
+  <a href="#research">研究与实践</a>
+  <a href="#about">关于我</a>
+</div>
   </nav>
 
   <header class="hero">
@@ -160,6 +221,81 @@
     </div>
   </section>
 
+    <section class="section" id="news-gallery">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>新闻档案</h2>
+        <span class="section-number">02 / NEWS ARCHIVE</span>
+      </div>
+
+      <p class="gallery-intro">
+        一篇稿件，一个现场。从校园新闻到人物故事，记录参与采编的真实作品。
+      </p>
+
+      <div class="news-grid">
+        <figure class="news-item">
+          <img src="images/news-01.png" alt="新闻作品01" loading="lazy">
+          <figcaption><span>01</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-02.png" alt="新闻作品02" loading="lazy">
+          <figcaption><span>02</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-03.png" alt="新闻作品03" loading="lazy">
+          <figcaption><span>03</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-04.png" alt="新闻作品04" loading="lazy">
+          <figcaption><span>04</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-05.png" alt="新闻作品05" loading="lazy">
+          <figcaption><span>05</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-06.png" alt="新闻作品06" loading="lazy">
+          <figcaption><span>06</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-07.png" alt="新闻作品07" loading="lazy">
+          <figcaption><span>07</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-08.png" alt="新闻作品08" loading="lazy">
+          <figcaption><span>08</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-09.png" alt="新闻作品09" loading="lazy">
+          <figcaption><span>09</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-10.png" alt="新闻作品10" loading="lazy">
+          <figcaption><span>10</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-11.png" alt="新闻作品11" loading="lazy">
+          <figcaption><span>11</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-12.png" alt="新闻作品12" loading="lazy">
+          <figcaption><span>12</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-13.png" alt="新闻作品13" loading="lazy">
+          <figcaption><span>13</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-14.png" alt="新闻作品14" loading="lazy">
+          <figcaption><span>14</span> 新闻作品</figcaption>
+        </figure>
+        <figure class="news-item">
+          <img src="images/news-15.png" alt="新闻作品15" loading="lazy">
+          <figcaption><span>15</span> 新闻作品</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
   <section class="section" id="research">
     <div class="section-inner">
       <div class="section-heading">
